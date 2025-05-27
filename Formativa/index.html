@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Interativas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7f4;
+            color: #034c4c;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+        }
+
+        div {
+            background-color: #b2ebe0;
+            border: 2px solid #66c2b1;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #33c3aa;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2aa391;
+        }
+
+        .modal {
+            display: none;
+            background-color: #a8e5dc;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Atividade 1 -->
+    <div>
+        <p><strong>Atividade 1</strong></p>
+        <p>O texto vai ser alterado</p>
+        <button onclick="E1()">E1</button>
+        <p id="mensagem">Texto que vai ser alterado</p>
+    </div>
+
+    <!-- Atividade 2 -->
+    <div>
+        <p><strong>Atividade 2</strong></p>
+        <p>Adicionando parágrafos para essa div</p>
+        <button onclick="E2()">E2</button>
+        <div id="container2"></div>
+    </div>
+
+    <!-- Atividade 3 -->
+    <div>
+        <p><strong>Atividade 3</strong></p>
+        <p>Adicionando botões para essa div</p>
+        <button onclick="E3()">E3</button>
+        <div id="container"></div>
+    </div>
+
+    <!-- Atividade 4 -->
+    <div>
+        <p><strong>Atividade 4</strong></p>
+        <p>Trocando a classe do parágrafo</p>
+        <button onclick="E4()">E4</button>
+        <div id="box">
+            <p>MIMEMAMOMU</p>
+        </div>
+    </div>
+
+    <!-- Atividade 5 -->
+    <div>
+        <p><strong>Atividade 5</strong></p>
+        <p>Adicionando itens na lista</p>
+        <button onclick="addItem()">E5</button>
+        <ul id="lista"></ul>
+    </div>
+
+    <!-- Atividade 6 -->
+    <div>
+        <p><strong>Atividade 6</strong></p>
+        <p>Botão incrementador</p>
+        <span id="contador">0</span>
+        <br>
+        <button onclick="incrementar()">Incrementar</button>
+    </div>
+
+    <!-- Atividade 7 -->
+    <div>
+        <p><strong>Atividade 7</strong></p>
+        <p>O Display da div vai mudar</p>
+        <div class="modal" id="modal">
+            <ul>
+                <li>MiMe</li>
+                <li>Ma</li>
+                <li>Momu</li>
+            </ul>
+        </div>
+        <button onclick="modal()">Display</button>
+    </div>
+
+    <!-- Lista de Nomes -->
+    <div>
+        <h1>Lista de Nomes</h1>
+        <ul id="greatings"></ul>
+    </div>
+
+    <!-- Contar Pares -->
+    <div>
+        <h1>Quantos Pares?</h1>
+        <h2>1, 4, 7, 10, 13, 16</h2>
+        <h2 id="quantp"></h2>
+        <button onclick="par()">Clique Aqui!</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
