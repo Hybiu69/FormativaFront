@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="container d-flex justify-content-center mt-5 mb-5">
+        <div class="card p-3 col-3">
+            <h4 class="d-flex justify-content-center mb-4 mt-2">CRIANDO OBJETO</h4>
+
+            <div class="mb-3">
+              <label class="form-label" id="largura">Digite a largura</label>
+              <input type="text" class="form-control" id="larg">
+              <small id="medidaLargura" class="form-text text-muted">Digite o valor com suas medidas: px|vw|vh|etc.</small>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" id="altura">Digite a altura</label>
+              <input type="text" class="form-control" id="alt">
+              <small id="medidaAltura" class="form-text text-muted">Digite o valor com suas medidas: px|vw|vh|etc.</small>
+            </div>
+         
+            <div class="mb-3">
+                <label class="form-label">Selecione a cor desejada</label>
+                <select class="form-select" id="cor">
+                    <option value="blue">blue</option>
+                    <option value="yellow">Amarelo</option>
+                    <option value="red">Vermelho</option>
+                </select>
+            </div>
+         
+            <div class="mb-3">
+              <label class="form-label">Quantos objetos devem ser criados?</label>
+              <input type="number" class="form-control" value="1" min="1" max="10" id="numObj">
+              <small id="qtdObj" class="form-text text-muted">O mínimo é 1 e o máximo é 10 objetos</small>
+            </div>
+            <button class="btn btn-dark" id="btn">Criar</button>
+          </div>
+ </section>
+ <script src="js/script.js"></script>
+</body>
+</html>
